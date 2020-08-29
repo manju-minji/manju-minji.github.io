@@ -16,15 +16,19 @@ last_modified_at: 2020-08-23
 
 수학 문제를 풀다가 한번쯤 마주쳤을 법한 문제인 '쾨니히스베르크의 다리 문제'를 풀기 위해 그래프 이론을 사용했다고 한다.
 
-![쾨니히스베르크의 다리 문제]([https://ko.wikipedia.org/wiki/%EC%BE%A8%EB%8B%88%ED%9E%88%EC%8A%A4%EB%B2%A0%EB%A5%B4%ED%81%AC%EC%9D%98_%EB%8B%A4%EB%A6%AC_%EB%AC%B8%EC%A0%9C#/media/%ED%8C%8C%EC%9D%BC:Konigsberg_bridges.png](https://ko.wikipedia.org/wiki/쾨니히스베르크의_다리_문제#/media/파일:Konigsberg_bridges.png) "쾨니히스베르크의 다리 문제")
-
 문제 : <cite>모든 다리를 한 번씩만 건너서 처음 출발했던 장소로 돌아올 수 있는가?</cite>
+
+
+
+![쾨니히스베르크의 다리 문제](https://ko.wikipedia.org/wiki/%EC%BE%A8%EB%8B%88%ED%9E%88%EC%8A%A4%EB%B2%A0%EB%A5%B4%ED%81%AC%EC%9D%98_%EB%8B%A4%EB%A6%AC_%EB%AC%B8%EC%A0%9C#/media/%ED%8C%8C%EC%9D%BC:Konigsberg_bridges.png "쾨니히스베르크의 다리 문제")
 
 
 
 그래프에는 __정점__ 과 __간선__ 이 있다.
 
-(이미지 넣기)
+![image-20200829123842799](C:\Users\이민지\AppData\Roaming\Typora\typora-user-images\image-20200829123842799.png){: width="30%" height="30%"}
+
+
 
 __정점__ 은 Node, Vertex라고 불리고
 
