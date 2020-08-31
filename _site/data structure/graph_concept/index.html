@@ -20,7 +20,7 @@
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="밍디의 코딩하는 블로그">
 <meta property="og:title" content="Graph에 대하여">
-<meta property="og:url" content="http://localhost:4000/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/graph_concept/">
+<meta property="og:url" content="http://localhost:4000/data%20structure/graph_concept/">
 
 
   <meta property="og:description" content="GRAPH란?">
@@ -35,7 +35,7 @@
 
 
 
-  <meta property="article:modified_time" content="2020-08-23T00:00:00+09:00">
+  <meta property="article:modified_time" content="2020-08-28T00:00:00+09:00">
 
 
 
@@ -44,7 +44,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/graph_concept/">
+<link rel="canonical" href="http://localhost:4000/data%20structure/graph_concept/">
 
 
 
@@ -132,7 +132,7 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
+              <a href="/about/">블로그 소개</a>
             </li><li class="masthead__menu-item">
               <a href="/categories/">Categories</a>
             </li></ul>
@@ -168,6 +168,12 @@
 
 <div itemscope itemtype="https://schema.org/Person">
 
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/coding.jpeg" alt="MINDI'S Blog" itemprop="image">
+      
+    </div>
   
 
   <div class="author__content">
@@ -277,7 +283,7 @@
     <meta itemprop="headline" content="Graph에 대하여">
     <meta itemprop="description" content="GRAPH란?">
     <meta itemprop="datePublished" content="2020-08-28T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2020-08-23T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2020-08-28T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
@@ -318,7 +324,31 @@
 
       <section class="page__content" itemprop="text">
         
-        <h1 id="graph란">GRAPH란?</h1>
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#graph란">GRAPH란?</a></li>
+  <li><a href="#graph의-종류">GRAPH의 종류</a></li>
+  <li><a href="#graph에서-사용하는-용어">Graph에서 사용하는 용어</a></li>
+  <li><a href="#그래프의-표현">그래프의 표현</a>
+    <ul>
+      <li><a href="#인접-행렬">인접 행렬</a></li>
+      <li><a href="#인접-리스트">인접 리스트</a>
+        <ul>
+          <li><a href="#-가중치-그래프인-경우">* 가중치 그래프인 경우</a></li>
+        </ul>
+      </li>
+      <li><a href="#인접-행렬과-인접-리스트의-비교">인접 행렬과 인접 리스트의 비교</a></li>
+      <li><a href="#추가적인-표현-방법">추가적인 표현 방법</a></li>
+    </ul>
+  </li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <h2 id="graph란">GRAPH란?</h2>
 
 <p>그래프 알고리즘은 수학자 ‘오일러’에 의해 고안되었다고 한다.</p>
 
@@ -340,7 +370,9 @@
 
 <p>‘간선’은 <strong>정점</strong> 간의 <strong>관계</strong> 를 나타낸다.</p>
 
-<h1 id="graph의-종류">GRAPH의 종류</h1>
+<hr />
+
+<h2 id="graph의-종류">GRAPH의 종류</h2>
 
 <p>그래프는 <strong>방향 그래프</strong>, <strong>무방향 그래프</strong> 가 있다.</p>
 
@@ -403,7 +435,9 @@
   <li>한 정점에서 다른 정점으로 이동하는데 소요되는 시간, 소모 비용, 거리 등이 될 수 있다.</li>
 </ul>
 
-<h1 id="graph에서-사용하는-용어">Graph에서 사용하는 용어</h1>
+<hr />
+
+<h2 id="graph에서-사용하는-용어">Graph에서 사용하는 용어</h2>
 
 <ol>
   <li>
@@ -449,7 +483,7 @@
         <ul>
           <li>정점 3에서 다시 3으로 돌아오는 경로
 	*  3 -&gt; 4 -&gt; 1 -&gt; 2 -&gt; 3
-	*  3 -&gt; 4 -&gt; 1 -&gt; 3</li>
+    	*  3 -&gt; 4 -&gt; 1 -&gt; 3</li>
         </ul>
       </li>
       <li>
@@ -495,17 +529,17 @@
   </li>
 </ol>
 
-<h1 id="그래프의-표현">그래프의 표현</h1>
+<hr />
+
+<h2 id="그래프의-표현">그래프의 표현</h2>
 
 <p>그래프는 <strong>인접 행렬(adjacent matrix)</strong> 혹은 <strong>인접 리스트(adjacent list)</strong> 를 이용해서 표현 할 수 있다.</p>
 
 <h3 id="인접-행렬">인접 행렬</h3>
 
-<p>정점의 개수를 V라고 했을 때, V×V 크기의 이차원 배열을 이용한다.</p>
+<p>​	정점의 개수를 V라고 했을 때, V×V 크기의 이차원 배열을 이용한다.</p>
 
-<p><img src="http://drive.google.com/uc?export=view&amp;id=1Z3YKlp_-KTX0fVvfiKrB5Qa7OHjalEeB" style="zoom:50%;" /></p>
-
-<p>​</p>
+<p>​	<img src="http://drive.google.com/uc?export=view&amp;id=1Z3YKlp_-KTX0fVvfiKrB5Qa7OHjalEeB" style="zoom:50%;" /></p>
 
 <table>
   <thead>
@@ -562,11 +596,11 @@
   </tbody>
 </table>
 
-<p>이처럼 정점을 연결하는 간선이 <strong>있는 경우에는 1</strong> , <strong>없는 경우에는 0</strong> 으로 나타낸다.</p>
+<p>​	이처럼 정점을 연결하는 간선이 <strong>있는 경우에는 1</strong> , <strong>없는 경우에는 0</strong> 으로 나타낸다.</p>
 
 <p>#### * 가중치 그래프인 경우</p>
 
-<p><img src="http://drive.google.com/uc?export=view&amp;id=1IrI1j0ZEn8ePGwJ30nRcwXPcGXI2cH8x" style="zoom:50%;" /></p>
+<p>​	<img src="http://drive.google.com/uc?export=view&amp;id=1IrI1j0ZEn8ePGwJ30nRcwXPcGXI2cH8x" style="zoom:50%;" /></p>
 
 <table>
   <thead>
@@ -623,23 +657,23 @@
   </tbody>
 </table>
 
-<p>v 정점에서 x 정점의 가중치를 넣어주면 된다.</p>
+<p>​	v 정점에서 x 정점의 가중치를 넣어주면 된다.</p>
 
 <h3 id="인접-리스트">인접 리스트</h3>
 
-<p>정점 V와 연결된 정점들을 리스트로 표현한다.</p>
+<p>​	정점 V와 연결된 정점들을 리스트로 표현한다.</p>
 
-<p><img src="http://drive.google.com/uc?export=view&amp;id=1Z3YKlp_-KTX0fVvfiKrB5Qa7OHjalEeB" style="zoom:50%;" /></p>
+<p>​	<img src="http://drive.google.com/uc?export=view&amp;id=1Z3YKlp_-KTX0fVvfiKrB5Qa7OHjalEeB" style="zoom:50%;" /></p>
 
-<p>​		<strong>A[1]</strong>	2	3	4</p>
+<p>​			<strong>A[1]</strong>	2	3	4</p>
 
-<p>​		<strong>A[2]</strong>	1	3</p>
+<p>​			<strong>A[2]</strong>	1	3</p>
 
-<p>​		<strong>A[3]</strong>	1	2	4	5</p>
+<p>​			<strong>A[3]</strong>	1	2	4	5</p>
 
-<p>​		<strong>A[4]</strong>	1	3	5</p>
+<p>​			<strong>A[4]</strong>	1	3	5</p>
 
-<p>​		<strong>A[5]</strong>	3	4</p>
+<p>​			<strong>A[5]</strong>	3	4</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	* 이때, 저장된 정점의 순서는 중요하지 않다.
 	* 리스트의 크기는 동적으로 변경할 수 있어야 하므로 C++의 vector나 JAVA의 ArrayList가 구현에 용이하다.
@@ -647,17 +681,17 @@
 
 <h4 id="-가중치-그래프인-경우">* 가중치 그래프인 경우</h4>
 
-<p><img src="http://drive.google.com/uc?export=view&amp;id=1IrI1j0ZEn8ePGwJ30nRcwXPcGXI2cH8x" style="zoom:50%;" /></p>
+<p>​	<img src="http://drive.google.com/uc?export=view&amp;id=1IrI1j0ZEn8ePGwJ30nRcwXPcGXI2cH8x" style="zoom:50%;" /></p>
 
-<p>​		<strong>A[1]</strong>	(2,1)	(3,6)	(4,3)</p>
+<p>​			<strong>A[1]</strong>	(2,1)	(3,6)	(4,3)</p>
 
-<p>​		<strong>A[2]</strong>	(1,1)	(3,5)</p>
+<p>​			<strong>A[2]</strong>	(1,1)	(3,5)</p>
 
-<p>​		<strong>A[3]</strong>	(1,6)	(2,5)	(4,4)	(5,2)</p>
+<p>​			<strong>A[3]</strong>	(1,6)	(2,5)	(4,4)	(5,2)</p>
 
-<p>​		<strong>A[4]</strong>	(1,3)	(3,4)	(5,3)</p>
+<p>​			<strong>A[4]</strong>	(1,3)	(3,4)	(5,3)</p>
 
-<p>​		<strong>A[5]</strong>	(3,2)	(4,3)</p>
+<p>​			<strong>A[5]</strong>	(3,2)	(4,3)</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* 위와 같이 (연결된 정점, 가중치)의 쌍을 리스트에 포함하면 된다.
 </code></pre></div></div>
@@ -710,13 +744,13 @@
 
 <h3 id="추가적인-표현-방법">추가적인 표현 방법</h3>
 
-<p>만약, 역량 평가 시험장에서 library를 쓰지 못하게 하거나, c만 써야하는 경우!</p>
+<p>​	만약, 역량 평가 시험장에서 library를 쓰지 못하게 하거나, c만 써야하는 경우!</p>
 
-<p>나는 C++, JAVA 잘 몰라요~하는 경우!</p>
+<p>​	나는 C++, JAVA 잘 몰라요~하는 경우!</p>
 
-<p>정말로 linked list를 구현해야 하는 경우!</p>
+<p>​	정말로 linked list를 구현해야 하는 경우!</p>
 
-<p>이럴 때는 어떻게 하느냐!</p>
+<p>​	이럴 때는 어떻게 하느냐!</p>
 
 <ol>
   <li><strong>간선에 대한 정보를 모두 저장</strong> 한다.</li>
@@ -845,6 +879,22 @@
   </li>
 </ol>
 
+<html>
+<html>
+    <body>
+        <br /><br /><br /><br /><br />
+        <hr style="border: dashed 5px #83dcb7;" />
+        <span style="font-style:italic; background-color: #ffffbf">
+            아직 배움의 과정에 있는 학생이니 내용에 부족한 점이 보이면 지적은 하되, 비난은 하지 말아주세요!!</span>
+        <hr style="border: dashed 5px #83dcb7;" />
+    </body>
+</html>
+
+
+
+
+</html>
+
 
         
       </section>
@@ -890,14 +940,14 @@
     
       
       
-      <a href="/categories/#%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0" class="page__taxonomy-item" rel="tag">자료구조</a>
+      <a href="/categories/#data-structure" class="page__taxonomy-item" rel="tag">data structure</a>
     
     </span>
   </p>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2020-08-23">August 23, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2020-08-28">August 28, 2020</time></p>
 
 
       </footer>
@@ -907,11 +957,11 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Graph%EC%97%90+%EB%8C%80%ED%95%98%EC%97%AC%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%259E%2590%25EB%25A3%258C%25EA%25B5%25AC%25EC%25A1%25B0%2Fgraph_concept%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Graph%EC%97%90+%EB%8C%80%ED%95%98%EC%97%AC%20http%3A%2F%2Flocalhost%3A4000%2Fdata%2520structure%2Fgraph_concept%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%259E%2590%25EB%25A3%258C%25EA%25B5%25AC%25EC%25A1%25B0%2Fgraph_concept%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fdata%2520structure%2Fgraph_concept%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%259E%2590%25EB%25A3%258C%25EA%25B5%25AC%25EC%25A1%25B0%2Fgraph_concept%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fdata%2520structure%2Fgraph_concept%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -922,7 +972,7 @@
 ">이전</a>
     
     
-      <a href="/github%20blog/github_blog(2)/" class="pagination--pager" title="Github 블로그 만들기(2) - 테마 설정
+      <a href="/github%20blog/github_blog(2)/" class="pagination--pager" title="Github 블로그 만들기(2) - 테마 설정, 테마 추천
 ">다음</a>
     
   </nav>
@@ -945,9 +995,171 @@
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
+      <div class="archive__item-teaser">
+        <img src="/assets/images/logo.jpeg" alt="">
+      </div>
+    
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/github%20blog/github_blog(2)/" rel="permalink">Github 블로그 만들기(2) - 테마 설정
+        <a href="/github%20blog/github_blog(5)/" rel="permalink">Github 블로그 만들기(5) - 검색 가능하게 만들기
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+      
+      <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+      <time datetime="2020-08-31T00:00:00+09:00">August 31, 2020</time>
+    
+
+    
+      
+        <br \>
+      
+    
+
+    
+      
+      
+
+      <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+      
+        최대 1 분 소요
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">블로그 검색 가능하게 만들기
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/logo.jpeg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/github%20blog/github_blog(4)/" rel="permalink">Github 블로그 만들기(4) - 댓글 기능
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+      
+      <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+      <time datetime="2020-08-31T00:00:00+09:00">August 31, 2020</time>
+    
+
+    
+      
+        <br \>
+      
+    
+
+    
+      
+      
+
+      <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+      
+        최대 1 분 소요
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">블로그에 댓글 기능 구현하기
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/logo.jpeg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/github%20blog/github_blog(3)/" rel="permalink">Github 블로그 만들기(3) - 로컬 개발 환경 구축
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+      
+      <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+      <time datetime="2020-08-31T00:00:00+09:00">August 31, 2020</time>
+    
+
+    
+      
+        <br \>
+      
+    
+
+    
+      
+      
+
+      <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+      
+        1 분 소요
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">왜 하는 거야 이걸?
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/logo.jpeg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/github%20blog/github_blog(2)/" rel="permalink">Github 블로그 만들기(2) - 테마 설정, 테마 추천
 </a>
       
     </h2>
@@ -981,153 +1193,6 @@
   </p>
 
     <p class="archive__item-excerpt" itemprop="description">테마 넣기 - Jekyll
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/life/drive_link/" rel="permalink">google drive에 있는 이미지 외부 링크 만들기
-</a>
-      
-    </h2>
-    
-
-
-  <p class="page__meta">
-
-    
-      
-      <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-      <time datetime="2020-08-28T00:00:00+09:00">August 28, 2020</time>
-    
-
-    
-      
-        <br \>
-      
-    
-
-    
-      
-      
-
-      <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-      
-        최대 1 분 소요
-      
-    
-
-  </p>
-
-    <p class="archive__item-excerpt" itemprop="description">github 블로그를 작성할 때 이미지를 넣는 방법은 다양하게 있다.
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/machine%20learning/machine_learing_yahak/" rel="permalink">머신러닝이 뭔지 알고 싶은 사람들에게 머신러닝 야학을!
-</a>
-      
-    </h2>
-    
-
-
-  <p class="page__meta">
-
-    
-      
-      <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-      <time datetime="2020-08-23T00:00:00+09:00">August 23, 2020</time>
-    
-
-    
-      
-        <br \>
-      
-    
-
-    
-      
-      
-
-      <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-      
-        최대 1 분 소요
-      
-    
-
-  </p>
-
-    <p class="archive__item-excerpt" itemprop="description">Info Button Text
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/github%20blog/github_blog(1)/" rel="permalink">Github 블로그 만들기(1)
-</a>
-      
-    </h2>
-    
-
-
-  <p class="page__meta">
-
-    
-      
-      <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-      <time datetime="2020-08-23T00:00:00+09:00">August 23, 2020</time>
-    
-
-    
-      
-        <br \>
-      
-    
-
-    
-      
-      
-
-      <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-      
-        1 분 소요
-      
-    
-
-  </p>
-
-    <p class="archive__item-excerpt" itemprop="description">왜 github 블로그를 만들게 되었는가?
 
 </p>
   </article>
@@ -1173,6 +1238,8 @@
         
       
         
+          <li><a href="https://github.com/manju-minji" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
       
         
       
@@ -1207,8 +1274,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/graph_concept/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/graph_concept"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/data%20structure/graph_concept/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/data%20structure/graph_concept"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

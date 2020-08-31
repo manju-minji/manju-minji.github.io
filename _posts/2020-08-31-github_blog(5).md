@@ -1,6 +1,7 @@
 ---
 title: "Github 블로그 만들기(5) - 검색 가능하게 만들기"
 comments: true
+classes: wide
 categories:
   - github blog
 tags:
@@ -34,6 +35,32 @@ last_modified_at: 2020-08-31
 
         사이트의 소유권자만이 구글 검색을 허가 할 수 있기 때문에 진행하는 절차다.
 
-        제공하는 html파일을 다운 받아서, 자신의 블로그의 __root 디렉토리__ 에 넣는다.
+        1. 제공하는 html파일을 다운 받아서, 자신의 블로그의 __root 디렉토리__ 에 넣는다.
 
-     4. github에 commit 한다.
+           * 아무데나 넣으면 된다.
+
+        2. github에 commit 한다.
+
+        3. 확인을 누르면
+
+           ![](http://drive.google.com/uc?export=view&id=1PV0p1TPXVkYhoP_VEUZitLI6ALDgCT9P)
+
+           확인 되었다는 창이 나오면 정상적으로 된 것이다.
+
+     4. sitemap.xml 제출
+
+        ![](http://drive.google.com/uc?export=view&id=1jdmTznoOJ7lqjOQWSLZrS5AyaWK4qq-s)
+
+        Sitemaps 메뉴에 들어가서 위의 이미지 처럼 sitemap.xml을 제출한다.
+        
+        제출에 성공하면 다음과 같이 된다.
+        
+        ![](http://drive.google.com/uc?export=view&id=1t62PCr5UlgwGvOgKm06dMXpuxyFexiRZ)
+        
+        {: .notice--success}
+        
+        __참고__ : 검색 노출까지 일주일 정도의 시간이 소모된다고 한다.
+        
+        
+        
+        

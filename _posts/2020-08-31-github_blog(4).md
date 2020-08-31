@@ -1,6 +1,7 @@
 ---
 title: "Github 블로그 만들기(4) - 댓글 기능"
 comments: true
+classes: wide
 categories:
   - github blog
 tags:

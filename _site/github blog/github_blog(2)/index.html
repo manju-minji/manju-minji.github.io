@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Github 블로그 만들기(2) - 테마 설정 - 밍디의 코딩하는 블로그</title>
+<!-- begin _includes/seo.html --><title>Github 블로그 만들기(2) - 테마 설정, 테마 추천 - 밍디의 코딩하는 블로그</title>
 <meta name="description" content="테마 넣기 - Jekyll">
 
 
@@ -19,7 +19,7 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="밍디의 코딩하는 블로그">
-<meta property="og:title" content="Github 블로그 만들기(2) - 테마 설정">
+<meta property="og:title" content="Github 블로그 만들기(2) - 테마 설정, 테마 추천">
 <meta property="og:url" content="http://localhost:4000/github%20blog/github_blog(2)/">
 
 
@@ -106,7 +106,7 @@
 
   </head>
 
-  <body class="layout--single">
+  <body class="layout--single wide">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -132,7 +132,7 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
+              <a href="/about/">블로그 소개</a>
             </li><li class="masthead__menu-item">
               <a href="/categories/">Categories</a>
             </li></ul>
@@ -168,6 +168,12 @@
 
 <div itemscope itemtype="https://schema.org/Person">
 
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/coding.jpeg" alt="MINDI'S Blog" itemprop="image">
+      
+    </div>
   
 
   <div class="author__content">
@@ -274,7 +280,7 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Github 블로그 만들기(2) - 테마 설정">
+    <meta itemprop="headline" content="Github 블로그 만들기(2) - 테마 설정, 테마 추천">
     <meta itemprop="description" content="테마 넣기 - Jekyll">
     <meta itemprop="datePublished" content="2020-08-31T00:00:00+09:00">
     <meta itemprop="dateModified" content="2020-08-31T00:00:00+09:00">
@@ -282,7 +288,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Github 블로그 만들기(2) - 테마 설정
+          <h1 id="page-title" class="page__title" itemprop="headline">Github 블로그 만들기(2) - 테마 설정, 테마 추천
 </h1>
           
 
@@ -324,9 +330,69 @@
 
 <p>하지만 여기에 Jekyll을 결합한다면 이러한 나의 고생을 덜면서 꽤 훌륭한 모양새를 갖춘 블로그를 만들 수 있다.</p>
 
-<p>Jekyll에는 아래와 같이 여러가지 테마들이 있다.</p>
+<ol>
+  <li>
+    <p>테마 고르기</p>
 
-<p><img src="http://drive.google.com/uc?export=view&amp;id=1U8SYUjQToccwWYmKx6nl9_pBpWlvJogQ" alt="" /></p>
+    <ul>
+      <li>Jekyll에는 아래와 같이 여러가지 테마들이 있다.</li>
+    </ul>
+
+    <p><img src="http://drive.google.com/uc?export=view&amp;id=1U8SYUjQToccwWYmKx6nl9_pBpWlvJogQ" alt="" /></p>
+
+    <ul>
+      <li>
+        <p>이 테마를 사용하기 전에…여러 테마들을 사용해 봤는데 이 테마가 제일 좋은 것 같다.</p>
+
+        <p>이 테마의 이름은 ‘<a href="https://github.com/mmistakes/minimal-mistakes">minimal-mistakes</a>‘이다.</p>
+
+        <ul>
+          <li>왜 이 테마가 좋냐?
+            <ul>
+              <li>블로그를 customize하기 좋게 만들어 놨다. 정말.</li>
+              <li>게다가 잘 모를까봐 넣어놓은 예제 파일들도 너무 좋고, 설명도 너무 잘 되어 있다.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>테마 다운 받아서 repository에 넣기</p>
+
+    <p><img src="http://drive.google.com/uc?export=view&amp;id=1wE1dYixhIL8huY1Ioyb-z0qYwv2Ydomf" style="zoom:50%;" /></p>
+
+    <ul>
+      <li>download zip을 해서, 이전 포스팅의 clone을 통해 생긴 내 블로그 파일에다가 넣고 압축을 풀어준다.</li>
+    </ul>
+  </li>
+  <li>
+    <p>customize하기</p>
+  </li>
+</ol>
+
+<p class="notice--warning">_config.yml에 들어가면 블로그 이름부터 하나하나 customize 할 수 있다. <br />테마마다 다를 수 있음을 주의하자.<br />minimal-mistakes 테마의 경우 ‘Quick Start Guide’라는 것이 있다. 이것을 보고 차근차근 따라하면 좋을 듯 하다.<br />질문이 있다면 댓글로.</p>
+
+<ol>
+  <li>적용 확인하기</li>
+</ol>
+
+<ul>
+  <li>
+    <p>우리가 변경한 내용들을 github에 올려줘야한다.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git add .
+
+$ git commit -m "테마 추가"
+
+$ git pull
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>잠시 뒤에 내 블로그 주소로 들어가보면 테마가 적용된 것을 확인 할 수 있다.</p>
+  </li>
+</ul>
+
 
         
       </section>
@@ -389,7 +455,7 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Github+%EB%B8%94%EB%A1%9C%EA%B7%B8+%EB%A7%8C%EB%93%A4%EA%B8%B0%282%29+-+%ED%85%8C%EB%A7%88+%EC%84%A4%EC%A0%95%20http%3A%2F%2Flocalhost%3A4000%2Fgithub%2520blog%2Fgithub_blog%282%29%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Github+%EB%B8%94%EB%A1%9C%EA%B7%B8+%EB%A7%8C%EB%93%A4%EA%B8%B0%282%29+-+%ED%85%8C%EB%A7%88+%EC%84%A4%EC%A0%95%2C+%ED%85%8C%EB%A7%88+%EC%B6%94%EC%B2%9C%20http%3A%2F%2Flocalhost%3A4000%2Fgithub%2520blog%2Fgithub_blog%282%29%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fgithub%2520blog%2Fgithub_blog%282%29%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -400,11 +466,12 @@
       
   <nav class="pagination">
     
-      <a href="/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/graph_concept/" class="pagination--pager" title="Graph에 대하여
+      <a href="/data%20structure/graph_concept/" class="pagination--pager" title="Graph에 대하여
 ">이전</a>
     
     
-      <a href="#" class="pagination--pager disabled">다음</a>
+      <a href="/github%20blog/github_blog(3)/" class="pagination--pager" title="Github 블로그 만들기(3) - 로컬 개발 환경 구축
+">다음</a>
     
   </nav>
 
@@ -426,9 +493,171 @@
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
+      <div class="archive__item-teaser">
+        <img src="/assets/images/logo.jpeg" alt="">
+      </div>
+    
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/graph_concept/" rel="permalink">Graph에 대하여
+        <a href="/github%20blog/github_blog(5)/" rel="permalink">Github 블로그 만들기(5) - 검색 가능하게 만들기
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+      
+      <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+      <time datetime="2020-08-31T00:00:00+09:00">August 31, 2020</time>
+    
+
+    
+      
+        <br \>
+      
+    
+
+    
+      
+      
+
+      <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+      
+        최대 1 분 소요
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">블로그 검색 가능하게 만들기
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/logo.jpeg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/github%20blog/github_blog(4)/" rel="permalink">Github 블로그 만들기(4) - 댓글 기능
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+      
+      <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+      <time datetime="2020-08-31T00:00:00+09:00">August 31, 2020</time>
+    
+
+    
+      
+        <br \>
+      
+    
+
+    
+      
+      
+
+      <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+      
+        최대 1 분 소요
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">블로그에 댓글 기능 구현하기
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/logo.jpeg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/github%20blog/github_blog(3)/" rel="permalink">Github 블로그 만들기(3) - 로컬 개발 환경 구축
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+      
+      <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+      <time datetime="2020-08-31T00:00:00+09:00">August 31, 2020</time>
+    
+
+    
+      
+        <br \>
+      
+    
+
+    
+      
+      
+
+      <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+      
+        1 분 소요
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">왜 하는 거야 이걸?
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/logo.jpeg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/data%20structure/graph_concept/" rel="permalink">Graph에 대하여
 </a>
       
     </h2>
@@ -462,153 +691,6 @@
   </p>
 
     <p class="archive__item-excerpt" itemprop="description">GRAPH란?
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/life/drive_link/" rel="permalink">google drive에 있는 이미지 외부 링크 만들기
-</a>
-      
-    </h2>
-    
-
-
-  <p class="page__meta">
-
-    
-      
-      <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-      <time datetime="2020-08-28T00:00:00+09:00">August 28, 2020</time>
-    
-
-    
-      
-        <br \>
-      
-    
-
-    
-      
-      
-
-      <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-      
-        최대 1 분 소요
-      
-    
-
-  </p>
-
-    <p class="archive__item-excerpt" itemprop="description">github 블로그를 작성할 때 이미지를 넣는 방법은 다양하게 있다.
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/machine%20learning/machine_learing_yahak/" rel="permalink">머신러닝이 뭔지 알고 싶은 사람들에게 머신러닝 야학을!
-</a>
-      
-    </h2>
-    
-
-
-  <p class="page__meta">
-
-    
-      
-      <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-      <time datetime="2020-08-23T00:00:00+09:00">August 23, 2020</time>
-    
-
-    
-      
-        <br \>
-      
-    
-
-    
-      
-      
-
-      <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-      
-        최대 1 분 소요
-      
-    
-
-  </p>
-
-    <p class="archive__item-excerpt" itemprop="description">Info Button Text
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/github%20blog/github_blog(1)/" rel="permalink">Github 블로그 만들기(1)
-</a>
-      
-    </h2>
-    
-
-
-  <p class="page__meta">
-
-    
-      
-      <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-      <time datetime="2020-08-23T00:00:00+09:00">August 23, 2020</time>
-    
-
-    
-      
-        <br \>
-      
-    
-
-    
-      
-      
-
-      <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-      
-        1 분 소요
-      
-    
-
-  </p>
-
-    <p class="archive__item-excerpt" itemprop="description">왜 github 블로그를 만들게 되었는가?
 
 </p>
   </article>
@@ -653,6 +735,8 @@
       
         
       
+        
+          <li><a href="https://github.com/manju-minji" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
         
       
         

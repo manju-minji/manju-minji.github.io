@@ -1,6 +1,7 @@
 ---
 title: "Github 블로그 만들기(2) - 테마 설정, 테마 추천"
 comments: true
+classes: wide
 categories:
   - github blog
 tags:
@@ -34,30 +35,27 @@ last_modified_at: 2020-08-31
 
 2. 테마 다운 받아서 repository에 넣기
 
-   ![](http://drive.google.com/uc?export=view&id=1wE1dYixhIL8huY1Ioyb-z0qYwv2Ydomf)
+   <img src="http://drive.google.com/uc?export=view&id=1wE1dYixhIL8huY1Ioyb-z0qYwv2Ydomf" style="zoom:50%;" />
 
    * download zip을 해서, 이전 포스팅의 clone을 통해 생긴 내 블로그 파일에다가 넣고 압축을 풀어준다.
 
 3. customize하기
 
-   _config.yml에 들어가면 블로그 이름부터 하나하나 customize 할 수 있다. 
+  {: .notice--warning}
 
-   테마마다 다를 수 있음을 주의하자.
-
-   minimal-mistakes 테마의 경우 'Quick Start Guide'라는 것이 있다. 이것을 보고 차근차근 따라하면 좋을 듯 하다.
-
-   질문이 있다면 댓글로
-
-   {: .notice--warning}
+   _config.yml에 들어가면 블로그 이름부터 하나하나 customize 할 수 있다. <br>테마마다 다를 수 있음을 주의하자.<br>minimal-mistakes 테마의 경우 'Quick Start Guide'라는 것이 있다. 이것을 보고 차근차근 따라하면 좋을 듯 하다.<br>질문이 있다면 댓글로.
 
 4. 적용 확인하기
 
-   * 우리가 변경한 내용들을 github에 올려줘야한다.
+* 우리가 변경한 내용들을 github에 올려줘야한다.
 
-     `$ git add .`
+  ```
+  $ git add .
 
-     `$ git commit -m "테마 추가"`
+  $ git commit -m "테마 추가"
 
-     `$ git pull`
+  $ git pull
+  ```
 
-   * 잠시 뒤에 내 블로그 주소로 들어가보면 테마가 적용된 것을 확인 할 수 있다.
+* 잠시 뒤에 내 블로그 주소로 들어가보면 테마가 적용된 것을 확인 할 수 있다.
+

@@ -3,15 +3,18 @@
 title: "Graph에 대하여"
 comments: true
 categories:
-  - 자료구조
+  - data structure
 tags:
   - 자료구조
   - data structure
 show_date: true
-last_modified_at: 2020-08-23
+last_modified_at: 2020-08-28
+toc: true
+toc_sticky: true
+toc_label: 목차
 ---
 
-# GRAPH란?
+## GRAPH란?
 
 그래프 알고리즘은 수학자 '오일러'에 의해 고안되었다고 한다.
 
@@ -41,9 +44,9 @@ __간선__ 은 Edge라고 불린다.
 
 '간선'은 __정점__ 간의 __관계__ 를 나타낸다.
 
+___
 
-
-# GRAPH의 종류
+## GRAPH의 종류
 
 그래프는 __방향 그래프__, __무방향 그래프__ 가 있다.
 
@@ -97,9 +100,9 @@ __가중치__ 는
 
 * 한 정점에서 다른 정점으로 이동하는데 소요되는 시간, 소모 비용, 거리 등이 될 수 있다.
 
+___
 
-
-# Graph에서 사용하는 용어
+## Graph에서 사용하는 용어
 
 1. 경로
 
@@ -127,7 +130,7 @@ __가중치__ 는
 
        *  정점 3에서 다시 3으로 돌아오는 경로
           	*  3 -> 4 -> 1 -> 2 -> 3
-          	*  3 -> 4 -> 1 -> 3
+              	*  3 -> 4 -> 1 -> 3
 
    2. __단순 사이클__
 
@@ -151,20 +154,20 @@ __가중치__ 는
         * 4의 In-degree : 3
         * 4의 Out-degree : 1
 
+___
 
 
-
-# 그래프의 표현
+## 그래프의 표현
 
 그래프는 __인접 행렬(adjacent matrix)__ 혹은 __인접 리스트(adjacent list)__ 를 이용해서 표현 할 수 있다.
 
+
+
 ### 인접 행렬
 
-정점의 개수를 V라고 했을 때, V×V 크기의 이차원 배열을 이용한다.
+​	정점의 개수를 V라고 했을 때, V×V 크기의 이차원 배열을 이용한다.
 
-<img src="http://drive.google.com/uc?export=view&amp;id=1Z3YKlp_-KTX0fVvfiKrB5Qa7OHjalEeB" style="zoom:50%;" />
-
-​	
+​	<img src="http://drive.google.com/uc?export=view&amp;id=1Z3YKlp_-KTX0fVvfiKrB5Qa7OHjalEeB" style="zoom:50%;" />
 
 |       |  1   |  2   |  3   |  4   |  5   |
 | :---: | :--: | :--: | :--: | :--: | :--: |
@@ -174,13 +177,13 @@ __가중치__ 는
 | __4__ |  1   |  0   |  1   |  0   |  1   |
 | __5__ |  0   |  0   |  1   |  1   |  0   |
 
-이처럼 정점을 연결하는 간선이 __있는 경우에는 1__ , __없는 경우에는 0__ 으로 나타낸다.
+​	이처럼 정점을 연결하는 간선이 __있는 경우에는 1__ , __없는 경우에는 0__ 으로 나타낸다.
 
 
 
  #### * 가중치 그래프인 경우
 
-<img src="http://drive.google.com/uc?export=view&amp;id=1IrI1j0ZEn8ePGwJ30nRcwXPcGXI2cH8x" style="zoom:50%;" />
+​	<img src="http://drive.google.com/uc?export=view&amp;id=1IrI1j0ZEn8ePGwJ30nRcwXPcGXI2cH8x" style="zoom:50%;" />
 
 |       |  1   |  2   |  3   |  4   |  5   |
 | :---: | :--: | :--: | :--: | :--: | :--: |
@@ -190,44 +193,44 @@ __가중치__ 는
 | __4__ |  3   |  0   |  4   |  0   |  3   |
 | __5__ |  0   |  0   |  2   |  3   |  0   |
 
-v 정점에서 x 정점의 가중치를 넣어주면 된다.
+​	v 정점에서 x 정점의 가중치를 넣어주면 된다.
 
 
 
 ### 인접 리스트
 
-정점 V와 연결된 정점들을 리스트로 표현한다.
+​	정점 V와 연결된 정점들을 리스트로 표현한다.
 
-<img src="http://drive.google.com/uc?export=view&amp;id=1Z3YKlp_-KTX0fVvfiKrB5Qa7OHjalEeB" style="zoom:50%;" />
+​	<img src="http://drive.google.com/uc?export=view&amp;id=1Z3YKlp_-KTX0fVvfiKrB5Qa7OHjalEeB" style="zoom:50%;" />
 
-​		__A[1]__	2	3	4
+​			__A[1]__	2	3	4
 
-​		__A[2]__	1	3	
+​			__A[2]__	1	3	
 
-​		__A[3]__	1	2	4	5
+​			__A[3]__	1	2	4	5
 
-​		__A[4]__	1	3	5
+​			__A[4]__	1	3	5
 
-​		__A[5]__	3	4
+​			__A[5]__	3	4
 
 		* 이때, 저장된 정점의 순서는 중요하지 않다.
 		* 리스트의 크기는 동적으로 변경할 수 있어야 하므로 C++의 vector나 JAVA의 ArrayList가 구현에 용이하다.
 
 
 
-#### * 가중치 그래프인 경우
+#### 	* 가중치 그래프인 경우
 
-<img src="http://drive.google.com/uc?export=view&amp;id=1IrI1j0ZEn8ePGwJ30nRcwXPcGXI2cH8x" style="zoom:50%;" />
+​	<img src="http://drive.google.com/uc?export=view&amp;id=1IrI1j0ZEn8ePGwJ30nRcwXPcGXI2cH8x" style="zoom:50%;" />
 
-​		__A[1]__	(2,1)	(3,6)	(4,3)
+​			__A[1]__	(2,1)	(3,6)	(4,3)
 
-​		__A[2]__	(1,1)	(3,5)
+​			__A[2]__	(1,1)	(3,5)
 
-​		__A[3]__	(1,6)	(2,5)	(4,4)	(5,2)
+​			__A[3]__	(1,6)	(2,5)	(4,4)	(5,2)
 
-​		__A[4]__	(1,3)	(3,4)	(5,3)
+​			__A[4]__	(1,3)	(3,4)	(5,3)
 
-​		__A[5]__	(3,2)	(4,3)
+​			__A[5]__	(3,2)	(4,3)
 
 
 
@@ -264,13 +267,13 @@ v 정점에서 x 정점의 가중치를 넣어주면 된다.
 
 ### 추가적인 표현 방법
 
-만약, 역량 평가 시험장에서 library를 쓰지 못하게 하거나, c만 써야하는 경우!
+​	만약, 역량 평가 시험장에서 library를 쓰지 못하게 하거나, c만 써야하는 경우!
 
-나는 C++, JAVA 잘 몰라요~하는 경우!
+​	나는 C++, JAVA 잘 몰라요~하는 경우!
 
-정말로 linked list를 구현해야 하는 경우!
+​	정말로 linked list를 구현해야 하는 경우!
 
-이럴 때는 어떻게 하느냐!
+​	이럴 때는 어떻게 하느냐!
 
 
 
@@ -329,6 +332,8 @@ v 정점에서 x 정점의 가중치를 넣어주면 된다.
      * 정점 3과 관련된 간선들은 E[5]~E[8]
 
 
-
+<html>
+{% include default_mention.html %}
+</html>
 
 

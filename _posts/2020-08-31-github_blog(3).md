@@ -1,6 +1,7 @@
 ---
 title: "Github 블로그 만들기(3) - 로컬 개발 환경 구축"
 comments: true
+classes: wide
 categories:
   - github blog
 tags:
@@ -28,9 +29,17 @@ last_modified_at: 2020-08-31
 
    * terminal이나 cmd창을 열어서 압축을 푼 위치로 이동 한 뒤 **ruby setup.rb을 실행**하여 다운로드한다.
 
-     `$ cd 압축푼위치`
+     ```
+     
+     ```
 
-     `$ sudo ruby setup.rb`
+     $ cd 압축푼위치
+
+     $ sudo ruby setup.rb
+
+     ```
+     
+     ```
 
    * `$ ruby --version`을 했을 때 현재 버전이 나오면 설치가 성공적으로 된 것이다.
 
@@ -54,10 +63,11 @@ last_modified_at: 2020-08-31
 
 ### 발생 가능한 오류
 
-* __Gem::FilePermissionError__
-  * 이 블로그에서 제시하는 방법을 따라하면 된다. [블로그 가기](https://jojoldu.tistory.com/288)
+* __Gem::FilePermissionError__{: .notice--danger}
 
-* __incompatible character encodings: ASCII-8BIT and UTF-8__
+  ​	*	이 블로그에서 제시하는 방법을 따라하면 된다. [블로그 가기](https://jojoldu.tistory.com/288)
+
+* __incompatible character encodings: ASCII-8BIT and UTF-8__{: .notice--danger}
 
   post의 이름 형식은 **년도-월-일-제목.형식**이여야 한다.
 

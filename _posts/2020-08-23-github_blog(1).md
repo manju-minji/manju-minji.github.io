@@ -1,6 +1,7 @@
 ---
 title: "Github 블로그 만들기(1)"
 comments: true
+classes: wide
 categories:
   - github blog
 tags:
@@ -49,8 +50,8 @@ github에 대해서 잘 모르는 사람이 github와 친숙해지기 위해서 
 
    * 이제 내 컴퓨터에서 블로그에 대한 설정을 수정하고, 글을 게시하고 관리하기 위해 다운을 받아야한다.
 
-     ​	![](http://drive.google.com/uc?export=view&id=1DwrAlrrQKwqrfDH1VXaW84vx8q52fif4)
-
+      <img src="http://drive.google.com/uc?export=view&id=1DwrAlrrQKwqrfDH1VXaW84vx8q52fif4" style="zoom:50%;" />{: .align-center}
+     ​	
       1. 위의 이미지를 보면 주소가 나온다. 이 주소를 복사한다.
 
       2. terminal이나 cmd, git bash 등을 켜서 repository를 저장할 폴더로 이동한다.
@@ -62,4 +63,3 @@ github에 대해서 잘 모르는 사람이 github와 친숙해지기 위해서 
          `$ git clone 복사한주소`
 
          * 만약에 git 명령어가 작동하지 않는다면 git을 설치해야 하는데...이건 직접 각자의 OS에 맞게 검색해보자!
-

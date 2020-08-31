@@ -1,6 +1,7 @@
 ---
 title: "머신러닝이 뭔지 알고 싶은 사람들에게 머신러닝 야학을!"
 comments: true
+classes: wide
 categories:
   - Machine Learning
 tags:
@@ -44,8 +45,9 @@ last_modified_at: 2020-08-23
 이 글은 홍보글이 절대 아니다. 그냥 개인적으로 머신러닝을 공부하는 사람들에게 추천하고자 글을 작성했다. 
 
 
-
-
+<html>
+{% include default_mention.html %}
+</html>
 
 
 
