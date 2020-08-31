@@ -2,6 +2,8 @@
 
 title: "Graph에 대하여"
 comments: true
+header: 
+  teaser: "http://drive.google.com/uc?export=view&amp;id=1kvqN8dv10vdgY9CN9Nt8scugwabkURAp"
 categories:
   - data structure
 tags:
