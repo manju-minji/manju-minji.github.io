@@ -2,7 +2,7 @@
 title: "google drive에 있는 이미지 외부 링크 만들기"
 comments: true
 categories:
-  - 생활
+  - life
 tags:
   - google drive
 show_date: true
