@@ -1,71 +1,103 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-31T23:03:47+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">밍디의 코딩하는 블로그</title><subtitle>코딩에 대한 여러가지를 기록하는 자유분방한 블로그.</subtitle><author><name>MINDI'S Blog</name></author><entry><title type="html">Github 블로그 만들기(2) - 테마 설정, 테마 추천</title><link href="http://localhost:4000/github%20blog/github_blog(2)/" rel="alternate" type="text/html" title="Github 블로그 만들기(2) - 테마 설정, 테마 추천" /><published>2020-08-31T00:00:00+09:00</published><updated>2020-08-31T00:00:00+09:00</updated><id>http://localhost:4000/github%20blog/github_blog(2)</id><content type="html" xml:base="http://localhost:4000/github%20blog/github_blog(2)/">&lt;h3 id=&quot;테마-넣기---jekyll&quot;&gt;테마 넣기 - Jekyll&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-02T12:53:20+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">밍디의 코딩하는 블로그</title><subtitle>코딩에 대한 여러가지를 기록하는 자유분방한 블로그.</subtitle><author><name>MINDI'S Blog</name></author><entry><title type="html">Python을 이용하여 파일 다운로드하기</title><link href="http://localhost:4000/python/file_down/" rel="alternate" type="text/html" title="Python을 이용하여 파일 다운로드하기" /><published>2020-09-02T00:00:00+09:00</published><updated>2020-09-02T00:00:00+09:00</updated><id>http://localhost:4000/python/file_down</id><content type="html" xml:base="http://localhost:4000/python/file_down/">&lt;h2 id=&quot;python을-이용하여-파일-다운로드&quot;&gt;Python을 이용하여 파일 다운로드&lt;/h2&gt;
 
-&lt;p&gt;만든 github page를 일일히 내가 예쁘고 실용적으로 사용 가능하게 꾸며나간다는 것은 매우 많은 시간과, 노력을 요할 것이다. &lt;del&gt;그렇다면 굳이 page를 안 만들었을 듯&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;가끔 파일을 다운로드 해야 할 때&lt;/p&gt;
 
-&lt;p&gt;하지만 여기에 Jekyll을 결합한다면 이러한 나의 고생을 덜면서 꽤 훌륭한 모양새를 갖춘 블로그를 만들 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1x3DH0D0WeKQOkfq6POPfe-HYpw6XUgY-&quot; style=&quot;zoom:30%;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;테마 고르기&lt;/p&gt;
+&lt;p&gt;이런식으로 되어 있어서 일일히 저 링크들을 누르고, 다운 받고 해야하는 경우가 있다.&lt;/p&gt;
 
-    &lt;ul&gt;
-      &lt;li&gt;Jekyll에는 아래와 같이 여러가지 테마들이 있다.&lt;/li&gt;
-    &lt;/ul&gt;
+&lt;p&gt;일일히 누르고, 다운받고….너무 귀찮다!!!&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1U8SYUjQToccwWYmKx6nl9_pBpWlvJogQ&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;이 테마를 사용하기 전에…여러 테마들을 사용해 봤는데 이 테마가 제일 좋은 것 같다.&lt;/p&gt;
-
-        &lt;p&gt;이 테마의 이름은 ‘&lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes&quot;&gt;minimal-mistakes&lt;/a&gt;‘이다.&lt;/p&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;왜 이 테마가 좋냐?
-            &lt;ul&gt;
-              &lt;li&gt;블로그를 customize하기 좋게 만들어 놨다. 정말.&lt;/li&gt;
-              &lt;li&gt;게다가 잘 모를까봐 넣어놓은 예제 파일들도 너무 좋고, 설명도 너무 잘 되어 있다.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;테마 다운 받아서 repository에 넣기&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1wE1dYixhIL8huY1Ioyb-z0qYwv2Ydomf&quot; style=&quot;zoom:50%;&quot; /&gt;&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;download zip을 해서, 이전 포스팅의 clone을 통해 생긴 내 블로그 파일에다가 넣고 압축을 풀어준다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;customize하기&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p class=&quot;notice--warning&quot;&gt;_config.yml에 들어가면 블로그 이름부터 하나하나 customize 할 수 있다. &lt;br /&gt;테마마다 다를 수 있음을 주의하자.&lt;br /&gt;minimal-mistakes 테마의 경우 ‘Quick Start Guide’라는 것이 있다. 이것을 보고 차근차근 따라하면 좋을 듯 하다.&lt;br /&gt;질문이 있다면 댓글로.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;적용 확인하기&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h2 id=&quot;어떻게-하는-거죠&quot;&gt;어떻게 하는 거죠?&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;우리가 변경한 내용들을 github에 올려줘야한다.&lt;/p&gt;
+  &lt;li&gt;저 파일 링크들을 눌렀을 때 나오는 주소&lt;/li&gt;
+&lt;/ul&gt;
 
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add .
+&lt;blockquote&gt;
+  &lt;p&gt;쏼라쏼라/PDF-dir/ch1.pdf&lt;/p&gt;
+&lt;/blockquote&gt;
 
-$ git commit -m &quot;테마 추가&quot;
+&lt;p&gt;​	&lt;del&gt;앞 부분 주소까지 넣으면 너무 저 사이트를 공개하는 것 같아서 앞 부분 주소는 뺐다&lt;/del&gt;&lt;/p&gt;
 
-$ git pull
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;잠시 뒤에 내 블로그 주소로 들어가보면 테마가 적용된 것을 확인 할 수 있다.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>MINDI'S Blog</name></author><category term="github blog" /><category term="github" /><category term="jekyll" /><summary type="html">테마 넣기 - Jekyll</summary></entry><entry><title type="html">Github 블로그 만들기(3) - 로컬 개발 환경 구축</title><link href="http://localhost:4000/github%20blog/github_blog(3)/" rel="alternate" type="text/html" title="Github 블로그 만들기(3) - 로컬 개발 환경 구축" /><published>2020-08-31T00:00:00+09:00</published><updated>2020-08-31T00:00:00+09:00</updated><id>http://localhost:4000/github%20blog/github_blog(3)</id><content type="html" xml:base="http://localhost:4000/github%20blog/github_blog(3)/">&lt;h3 id=&quot;왜-하는-거야-이걸&quot;&gt;왜 하는 거야 이걸?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;혹은 검사(혹은 f12)를 눌렀을 때 확인 할 수 있는 주소&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1fqyJTNg0yW834VNCwup3mczjiSFPNiRU&quot; style=&quot;zoom:60%;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;​	를 보면&lt;/p&gt;
+
+&lt;p&gt;파일에 따라 &lt;strong&gt;뒷 부분&lt;/strong&gt; 만 바뀐다는 것을 알 수 있다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ch1 파일이면 쏼라쏼라/PDF-dir/&lt;strong&gt;ch1&lt;/strong&gt; .pdf&lt;/p&gt;
+
+  &lt;p&gt;ch2 파일이면 쏼라쏼라/PDF-dir/&lt;strong&gt;ch2&lt;/strong&gt; .pdf&lt;/p&gt;
+
+  &lt;p&gt;….&lt;/p&gt;
+
+  &lt;p&gt;ch123 파일이면 쏼라쏼라/PDF-dir/&lt;strong&gt;ch123&lt;/strong&gt; .pdf&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;그래서 &lt;strong&gt;주소 뒷 부분만 바꾸면&lt;/strong&gt; 파일을 읽어오고 다운 받을 수 있겠구나 라는 걸 알 수 있었다.&lt;/p&gt;
+
+&lt;h2 id=&quot;그래서-파이썬으로-어떻게-하냐고요&quot;&gt;그래서 파이썬으로 어떻게 하냐고요&lt;/h2&gt;
+
+&lt;p class=&quot;notice--success&quot;&gt;&lt;strong&gt;note&lt;/strong&gt; : 나는 &lt;strong&gt;google colaboratory&lt;/strong&gt; 를 이용했다.&lt;/p&gt;
+
+&lt;p&gt;코드는 매우 간단하다.&lt;/p&gt;
+
+&lt;div class=&quot;colorscripter-code&quot; style=&quot;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto&quot;&gt;&lt;table class=&quot;colorscripter-code-table&quot; style=&quot;margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td style=&quot;padding:6px;border-right:2px solid #4f4f4f&quot;&gt;&lt;div style=&quot;margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;line-height:130%&quot;&gt;1&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;2&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;3&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;4&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;5&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;6&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;7&lt;/div&gt;&lt;div style=&quot;line-height:130%&quot;&gt;8&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;padding:6px 0;text-align:left&quot;&gt;&lt;div style=&quot;margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%&quot;&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&lt;span style=&quot;color:#ff3399&quot;&gt;import&lt;/span&gt;&amp;nbsp;urllib.request&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&lt;span style=&quot;color:#ff3399&quot;&gt;from&lt;/span&gt;&amp;nbsp;google.colab&amp;nbsp;&lt;span style=&quot;color:#ff3399&quot;&gt;import&lt;/span&gt;&amp;nbsp;files&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&lt;span style=&quot;color:#ff3399&quot;&gt;for&lt;/span&gt;&amp;nbsp;i&amp;nbsp;&lt;span style=&quot;color:#ff3399&quot;&gt;in&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#4be6fa&quot;&gt;range&lt;/span&gt;(&lt;span style=&quot;color:#c10aff&quot;&gt;1&lt;/span&gt;,&lt;span style=&quot;color:#c10aff&quot;&gt;32&lt;/span&gt;):&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;file_name&amp;nbsp;&lt;span style=&quot;color:#0086b3&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#ff3399&quot;&gt;=&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#ffd500&quot;&gt;'ch'&lt;/span&gt;&lt;span style=&quot;color:#0086b3&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#ff3399&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;color:#4be6fa&quot;&gt;str&lt;/span&gt;(i)&lt;span style=&quot;color:#0086b3&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#ff3399&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;color:#ffd500&quot;&gt;'.pdf'&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;url&amp;nbsp;&lt;span style=&quot;color:#0086b3&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#ff3399&quot;&gt;=&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color:#ffd500&quot;&gt;'https://www.db-book.com/db7/slides-dir/PDF-dir/ch'&lt;/span&gt;&lt;span style=&quot;color:#0086b3&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#ff3399&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;color:#4be6fa&quot;&gt;str&lt;/span&gt;(i)&lt;span style=&quot;color:#0086b3&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#ff3399&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;color:#ffd500&quot;&gt;'.pdf'&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;urllib.request.urlretrieve(url,&amp;nbsp;file_name)&lt;/div&gt;&lt;div style=&quot;padding:0 6px; white-space:pre; line-height:130%&quot;&gt;&amp;nbsp;&amp;nbsp;files.download(file_name)&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic&quot;&gt;&lt;a href=&quot;http://colorscripter.com/info#e&quot; target=&quot;_blank&quot; style=&quot;color:#4f4f4ftext-decoration:none&quot;&gt;Colored by Color Scripter&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:bottom;padding:0 2px 4px 0&quot;&gt;&lt;a href=&quot;http://colorscripter.com/info#e&quot; target=&quot;_blank&quot; style=&quot;text-decoration:none;color:white&quot;&gt;&lt;span style=&quot;font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px&quot;&gt;cs&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;range는 끝 값을 포함하지 않는 것을 주의하자.&lt;/li&gt;
+  &lt;li&gt;file name을 지정하는 부분에서 &lt;strong&gt;꼭 확장자&lt;/strong&gt; 를 붙여 줘야 한다. 그래야 다운 후에 정상적으로 이용이 가능하다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;urlretrive로 url 변수의 값에 있는 주소로 가서 file_name에 저장해주고&lt;/p&gt;
+
+&lt;p&gt;file_name에 저장된 값을 다운로드 하면 된다.&lt;/p&gt;
+
+&lt;p&gt;위의 코드를 실행하고 나면&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1rnPKKJbvl3Jc5C9ZGnqboqBTROO18b-0&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이렇게 다운로드가 진행되고, 다운로드 된 파일을 내 컴퓨터에서 사용 가능하게 된다!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;참 쉽죠?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;html&gt;
+&lt;html&gt;
+    &lt;body&gt;
+        &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+        &lt;hr style=&quot;border: dashed 5px #83dcb7;&quot; /&gt;
+        &lt;span style=&quot;font-style:italic; background-color: #ffffbf&quot;&gt;
+            아직 배움의 과정에 있는 학생이니 내용에 부족한 점이 보이면 지적은 하되, 비난은 하지 말아주세요!!&lt;/span&gt;
+        &lt;hr style=&quot;border: dashed 5px #83dcb7;&quot; /&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+
+
+
+&lt;/html&gt;</content><author><name>MINDI'S Blog</name></author><category term="python" /><category term="python" /><category term="colaboratory" /><summary type="html">Python을 이용하여 파일 다운로드</summary></entry><entry><title type="html">png, jpg 용량 줄이기</title><link href="http://localhost:4000/life/png/" rel="alternate" type="text/html" title="png, jpg 용량 줄이기" /><published>2020-09-02T00:00:00+09:00</published><updated>2020-09-02T00:00:00+09:00</updated><id>http://localhost:4000/life/png</id><content type="html" xml:base="http://localhost:4000/life/png/">&lt;p&gt;가끔 png나 jpg 파일의 용량을 줄여야 하는 경우가 있다.&lt;/p&gt;
+
+&lt;p&gt;이때  회원 가입 없이 간편하게 사용 할 수 있는 유용한 사이트를 소개한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://tinypng.com/&quot;&gt;tinypng&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1lYs6a1xIvwmDV1jRjSmXHv-Sr1TjizYK&quot; style=&quot;zoom:50%;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;저기에 이미지를 drag &amp;amp; drop하면&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1-pJ8HVPtBcUKsLCbRZp9N93uXJoc9qZG&quot; style=&quot;zoom:50%;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이렇게 결과가 나오고, 우측의 &lt;a href=&quot;&quot;&gt;download&lt;/a&gt;를 누르면 된다.&lt;/p&gt;
+
+&lt;p&gt;여러 파일의 용량을 줄인 경우 하단에 &lt;a href=&quot;#link&quot; class=&quot;btn btn--success&quot;&gt;download all&lt;/a&gt; 이라는 버튼을 이용하면 한꺼번에 다운 받을 수 있어 편할 듯 하다.&lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt;혹시나 더 좋은 방법을 아시는 분이 있다면 알려주시면 감사하겠습니다!!&lt;/del&gt;&lt;/p&gt;</content><author><name>MINDI'S Blog</name></author><category term="life" /><category term="png" /><category term="용량 줄이기" /><summary type="html">가끔 png나 jpg 파일의 용량을 줄여야 하는 경우가 있다.</summary></entry><entry><title type="html">Github 블로그 만들기(3) - 로컬 개발 환경 구축</title><link href="http://localhost:4000/github%20blog/github_blog(3)/" rel="alternate" type="text/html" title="Github 블로그 만들기(3) - 로컬 개발 환경 구축" /><published>2020-08-31T00:00:00+09:00</published><updated>2020-08-31T00:00:00+09:00</updated><id>http://localhost:4000/github%20blog/github_blog(3)</id><content type="html" xml:base="http://localhost:4000/github%20blog/github_blog(3)/">&lt;h3 id=&quot;왜-하는-거야-이걸&quot;&gt;왜 하는 거야 이걸?&lt;/h3&gt;
 
 &lt;p&gt;블로그의 아주 사소한 부분을 수정해서 그 결과를 보기 위해서라도 github에 commit pull 기다림….너무 귀찮다.&lt;/p&gt;
 
@@ -236,7 +268,75 @@ $ git pull
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>MINDI'S Blog</name></author><category term="github blog" /><category term="github" /><category term="검색" /><summary type="html">블로그 검색 가능하게 만들기</summary></entry><entry><title type="html">google drive에 있는 이미지 외부 링크 만들기</title><link href="http://localhost:4000/life/drive_link/" rel="alternate" type="text/html" title="google drive에 있는 이미지 외부 링크 만들기" /><published>2020-08-28T00:00:00+09:00</published><updated>2020-08-29T00:00:00+09:00</updated><id>http://localhost:4000/life/drive_link</id><content type="html" xml:base="http://localhost:4000/life/drive_link/">&lt;p&gt;github 블로그를 작성할 때 이미지를 넣는 방법은 다양하게 있다.&lt;/p&gt;
+&lt;/ol&gt;</content><author><name>MINDI'S Blog</name></author><category term="github blog" /><category term="github" /><category term="검색" /><summary type="html">블로그 검색 가능하게 만들기</summary></entry><entry><title type="html">Github 블로그 만들기(2) - 테마 설정, 테마 추천</title><link href="http://localhost:4000/github%20blog/github_blog(2)/" rel="alternate" type="text/html" title="Github 블로그 만들기(2) - 테마 설정, 테마 추천" /><published>2020-08-31T00:00:00+09:00</published><updated>2020-08-31T00:00:00+09:00</updated><id>http://localhost:4000/github%20blog/github_blog(2)</id><content type="html" xml:base="http://localhost:4000/github%20blog/github_blog(2)/">&lt;h3 id=&quot;테마-넣기---jekyll&quot;&gt;테마 넣기 - Jekyll&lt;/h3&gt;
+
+&lt;p&gt;만든 github page를 일일히 내가 예쁘고 실용적으로 사용 가능하게 꾸며나간다는 것은 매우 많은 시간과, 노력을 요할 것이다. &lt;del&gt;그렇다면 굳이 page를 안 만들었을 듯&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;하지만 여기에 Jekyll을 결합한다면 이러한 나의 고생을 덜면서 꽤 훌륭한 모양새를 갖춘 블로그를 만들 수 있다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;테마 고르기&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Jekyll에는 아래와 같이 여러가지 테마들이 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1U8SYUjQToccwWYmKx6nl9_pBpWlvJogQ&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;이 테마를 사용하기 전에…여러 테마들을 사용해 봤는데 이 테마가 제일 좋은 것 같다.&lt;/p&gt;
+
+        &lt;p&gt;이 테마의 이름은 ‘&lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes&quot;&gt;minimal-mistakes&lt;/a&gt;‘이다.&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;왜 이 테마가 좋냐?
+            &lt;ul&gt;
+              &lt;li&gt;블로그를 customize하기 좋게 만들어 놨다. 정말.&lt;/li&gt;
+              &lt;li&gt;게다가 잘 모를까봐 넣어놓은 예제 파일들도 너무 좋고, 설명도 너무 잘 되어 있다.&lt;/li&gt;
+              &lt;li&gt;&lt;del&gt;사실 전에도 몇번 블로그를 만들었는데 다 customize가 힘들어서 갈아엎었다….정착해야지…&lt;/del&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;테마 다운 받아서 repository에 넣기&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;http://drive.google.com/uc?export=view&amp;amp;id=1wE1dYixhIL8huY1Ioyb-z0qYwv2Ydomf&quot; style=&quot;zoom:50%;&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;download zip을 해서, 이전 포스팅의 clone을 통해 생긴 내 블로그 파일에다가 넣고 압축을 풀어준다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;customize하기&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;_config.yml에 들어가면 블로그 이름부터 하나하나 customize 할 수 있다. &lt;br /&gt;테마마다 다를 수 있음을 주의하자.&lt;br /&gt;minimal-mistakes 테마의 경우 ‘Quick Start Guide’라는 것이 있다. 이것을 보고 차근차근 따라하면 좋을 듯 하다.&lt;br /&gt;질문이 있다면 댓글로.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;적용 확인하기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;우리가 변경한 내용들을 github에 올려줘야한다.&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add .
+
+$ git commit -m &quot;테마 추가&quot;
+
+$ git pull
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;잠시 뒤에 내 블로그 주소로 들어가보면 테마가 적용된 것을 확인 할 수 있다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>MINDI'S Blog</name></author><category term="github blog" /><category term="github" /><category term="jekyll" /><summary type="html">테마 넣기 - Jekyll</summary></entry><entry><title type="html">google drive에 있는 이미지 외부 링크 만들기</title><link href="http://localhost:4000/life/drive_link/" rel="alternate" type="text/html" title="google drive에 있는 이미지 외부 링크 만들기" /><published>2020-08-28T00:00:00+09:00</published><updated>2020-08-29T00:00:00+09:00</updated><id>http://localhost:4000/life/drive_link</id><content type="html" xml:base="http://localhost:4000/life/drive_link/">&lt;p&gt;github 블로그를 작성할 때 이미지를 넣는 방법은 다양하게 있다.&lt;/p&gt;
 
 &lt;p&gt;repository에 직접 이미지를 넣어도 되고(하지만 이것은 용량에 한계가…)&lt;/p&gt;
 
@@ -960,7 +1060,54 @@ $ git pull
 
 
 
-&lt;/html&gt;</content><author><name>MINDI'S Blog</name></author><category term="data structure" /><category term="자료구조" /><category term="data structure" /><summary type="html">GRAPH란?</summary></entry><entry><title type="html">Github 블로그 만들기(1)</title><link href="http://localhost:4000/github%20blog/github_blog(1)/" rel="alternate" type="text/html" title="Github 블로그 만들기(1)" /><published>2020-08-23T00:00:00+09:00</published><updated>2020-08-31T00:00:00+09:00</updated><id>http://localhost:4000/github%20blog/github_blog(1)</id><content type="html" xml:base="http://localhost:4000/github%20blog/github_blog(1)/">&lt;h3 id=&quot;왜-github-블로그를-만들게-되었는가&quot;&gt;왜 github 블로그를 만들게 되었는가?&lt;/h3&gt;
+&lt;/html&gt;</content><author><name>MINDI'S Blog</name></author><category term="data structure" /><category term="자료구조" /><category term="data structure" /><summary type="html">GRAPH란?</summary></entry><entry><title type="html">머신러닝이 뭔지 알고 싶은 사람들에게 머신러닝 야학을!</title><link href="http://localhost:4000/machine%20learning/machine_learing_yahak/" rel="alternate" type="text/html" title="머신러닝이 뭔지 알고 싶은 사람들에게 머신러닝 야학을!" /><published>2020-08-23T00:00:00+09:00</published><updated>2020-08-23T00:00:00+09:00</updated><id>http://localhost:4000/machine%20learning/machine_learing_yahak</id><content type="html" xml:base="http://localhost:4000/machine%20learning/machine_learing_yahak/">&lt;p&gt;&lt;a href=&quot;#link&quot; class=&quot;btn btn--info&quot;&gt;Info Button Text&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;4차 산업 혁명의 시대를 맞이하여 머신러닝이라는 단어는 누구나 한번쯤은 들어봤을 법한 단어로 자리매김했다.&lt;/p&gt;
+
+&lt;p&gt;하지만 ‘머신러닝이 뭐야?’라는 질문에 대답을 할 수 있는 사람은 과연 몇이나 될까…?&lt;/p&gt;
+
+&lt;p&gt;이 질문에 답을 할 수 있고, 더 나아가 전공자 수준까지의 지식을 &lt;strong&gt;무료&lt;/strong&gt;로 얻을 수 있는 컨텐츠가 나왔고&lt;/p&gt;
+
+&lt;p&gt;그것이 바로 생활 코딩에서 운영하는 &lt;strong&gt;머신러닝 야학&lt;/strong&gt;이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ml.yah.ac/&quot; title=&quot;머신러닝 야학&quot;&gt;머신러닝 야학&lt;/a&gt; 바로가기&lt;/p&gt;
+
+&lt;h3 id=&quot;컨텐츠의-장점&quot;&gt;컨텐츠의 장점&lt;/h3&gt;
+
+&lt;p&gt;일단 이 컨텐츠는 &lt;em&gt;세상 쿨하다&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;—&lt;cite&gt;너 그냥 머신러닝이 뭔지만 알고 싶어? 그러면 여기서 관둬 짝짝짝 수고 했어!&lt;/cite&gt;
+—&lt;cite&gt;전공적인 수준까지 더 얻고 싶어? 그러면 더 하면 돼~&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;이런 느낌?&lt;/p&gt;
+
+&lt;p&gt;그래서 누구나 부담 갖지 않고, 자신이 얻고자 하는 지식의 수준만큼만 얻고 쿨하게 작별하면 된다.&lt;/p&gt;
+
+&lt;p&gt;작별 후 인생을 살다가 지식이 더 필요하다고 느껴지면, 다시 컨텐츠를 찾아오면 된다.&lt;/p&gt;
+
+&lt;p&gt;그리고 &lt;em&gt;깔끔한 교육 컨텐츠&lt;/em&gt; 라서 너무 좋다.&lt;/p&gt;
+
+&lt;p&gt;거기다가 중요한 것은 &lt;em&gt;무료&lt;/em&gt; 이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;참고-사항&quot;&gt;참고 사항&lt;/h3&gt;
+
+&lt;p&gt;이 글은 홍보글이 절대 아니다. 그냥 개인적으로 머신러닝을 공부하는 사람들에게 추천하고자 글을 작성했다.&lt;/p&gt;
+
+&lt;html&gt;
+&lt;html&gt;
+    &lt;body&gt;
+        &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+        &lt;hr style=&quot;border: dashed 5px #83dcb7;&quot; /&gt;
+        &lt;span style=&quot;font-style:italic; background-color: #ffffbf&quot;&gt;
+            아직 배움의 과정에 있는 학생이니 내용에 부족한 점이 보이면 지적은 하되, 비난은 하지 말아주세요!!&lt;/span&gt;
+        &lt;hr style=&quot;border: dashed 5px #83dcb7;&quot; /&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+
+
+
+&lt;/html&gt;</content><author><name>MINDI'S Blog</name></author><category term="Machine Learning" /><category term="Machine Learning" /><category term="생활 코딩" /><summary type="html">Info Button Text</summary></entry><entry><title type="html">Github 블로그 만들기(1)</title><link href="http://localhost:4000/github%20blog/github_blog(1)/" rel="alternate" type="text/html" title="Github 블로그 만들기(1)" /><published>2020-08-23T00:00:00+09:00</published><updated>2020-08-31T00:00:00+09:00</updated><id>http://localhost:4000/github%20blog/github_blog(1)</id><content type="html" xml:base="http://localhost:4000/github%20blog/github_blog(1)/">&lt;h3 id=&quot;왜-github-블로그를-만들게-되었는가&quot;&gt;왜 github 블로그를 만들게 되었는가?&lt;/h3&gt;
 
 &lt;p&gt;github로 블로그를 만들 수 있다는 사실을 알기 전인 코딩 초창기에는 네이버 블로그에 알고리즘 문제 풀이 등을 업로드 하고는 했다.&lt;/p&gt;
 
@@ -1042,51 +1189,4 @@ $ git pull
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>MINDI'S Blog</name></author><category term="github blog" /><category term="github" /><summary type="html">왜 github 블로그를 만들게 되었는가?</summary></entry><entry><title type="html">머신러닝이 뭔지 알고 싶은 사람들에게 머신러닝 야학을!</title><link href="http://localhost:4000/machine%20learning/machine_learing_yahak/" rel="alternate" type="text/html" title="머신러닝이 뭔지 알고 싶은 사람들에게 머신러닝 야학을!" /><published>2020-08-23T00:00:00+09:00</published><updated>2020-08-23T00:00:00+09:00</updated><id>http://localhost:4000/machine%20learning/machine_learing_yahak</id><content type="html" xml:base="http://localhost:4000/machine%20learning/machine_learing_yahak/">&lt;p&gt;&lt;a href=&quot;#link&quot; class=&quot;btn btn--info&quot;&gt;Info Button Text&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;4차 산업 혁명의 시대를 맞이하여 머신러닝이라는 단어는 누구나 한번쯤은 들어봤을 법한 단어로 자리매김했다.&lt;/p&gt;
-
-&lt;p&gt;하지만 ‘머신러닝이 뭐야?’라는 질문에 대답을 할 수 있는 사람은 과연 몇이나 될까…?&lt;/p&gt;
-
-&lt;p&gt;이 질문에 답을 할 수 있고, 더 나아가 전공자 수준까지의 지식을 &lt;strong&gt;무료&lt;/strong&gt;로 얻을 수 있는 컨텐츠가 나왔고&lt;/p&gt;
-
-&lt;p&gt;그것이 바로 생활 코딩에서 운영하는 &lt;strong&gt;머신러닝 야학&lt;/strong&gt;이다.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://ml.yah.ac/&quot; title=&quot;머신러닝 야학&quot;&gt;머신러닝 야학&lt;/a&gt; 바로가기&lt;/p&gt;
-
-&lt;h3 id=&quot;컨텐츠의-장점&quot;&gt;컨텐츠의 장점&lt;/h3&gt;
-
-&lt;p&gt;일단 이 컨텐츠는 &lt;em&gt;세상 쿨하다&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;—&lt;cite&gt;너 그냥 머신러닝이 뭔지만 알고 싶어? 그러면 여기서 관둬 짝짝짝 수고 했어!&lt;/cite&gt;
-—&lt;cite&gt;전공적인 수준까지 더 얻고 싶어? 그러면 더 하면 돼~&lt;/cite&gt;&lt;/p&gt;
-
-&lt;p&gt;이런 느낌?&lt;/p&gt;
-
-&lt;p&gt;그래서 누구나 부담 갖지 않고, 자신이 얻고자 하는 지식의 수준만큼만 얻고 쿨하게 작별하면 된다.&lt;/p&gt;
-
-&lt;p&gt;작별 후 인생을 살다가 지식이 더 필요하다고 느껴지면, 다시 컨텐츠를 찾아오면 된다.&lt;/p&gt;
-
-&lt;p&gt;그리고 &lt;em&gt;깔끔한 교육 컨텐츠&lt;/em&gt; 라서 너무 좋다.&lt;/p&gt;
-
-&lt;p&gt;거기다가 중요한 것은 &lt;em&gt;무료&lt;/em&gt; 이다.&lt;/p&gt;
-
-&lt;h3 id=&quot;참고-사항&quot;&gt;참고 사항&lt;/h3&gt;
-
-&lt;p&gt;이 글은 홍보글이 절대 아니다. 그냥 개인적으로 머신러닝을 공부하는 사람들에게 추천하고자 글을 작성했다.&lt;/p&gt;
-
-&lt;html&gt;
-&lt;html&gt;
-    &lt;body&gt;
-        &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
-        &lt;hr style=&quot;border: dashed 5px #83dcb7;&quot; /&gt;
-        &lt;span style=&quot;font-style:italic; background-color: #ffffbf&quot;&gt;
-            아직 배움의 과정에 있는 학생이니 내용에 부족한 점이 보이면 지적은 하되, 비난은 하지 말아주세요!!&lt;/span&gt;
-        &lt;hr style=&quot;border: dashed 5px #83dcb7;&quot; /&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-
-
-
-
-&lt;/html&gt;</content><author><name>MINDI'S Blog</name></author><category term="Machine Learning" /><category term="Machine Learning" /><category term="생활 코딩" /><summary type="html">Info Button Text</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>MINDI'S Blog</name></author><category term="github blog" /><category term="github" /><summary type="html">왜 github 블로그를 만들게 되었는가?</summary></entry></feed>

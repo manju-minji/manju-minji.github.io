@@ -46,4 +46,16 @@ var store = [{
         "tags": ["github","검색"],
         "url": "http://localhost:4000/github%20blog/github_blog(5)/",
         "teaser": "http://localhost:4000/assets/images/code.jpg"
+      },{
+        "title": "Python을 이용하여 파일 다운로드하기",
+        "excerpt":"Python을 이용하여 파일 다운로드 가끔 파일을 다운로드 해야 할 때 이런식으로 되어 있어서 일일히 저 링크들을 누르고, 다운 받고 해야하는 경우가 있다. 일일히 누르고, 다운받고….너무 귀찮다!!! 어떻게 하는 거죠? 저 파일 링크들을 눌렀을 때 나오는 주소 쏼라쏼라/PDF-dir/ch1.pdf ​ 앞 부분 주소까지 넣으면 너무 저 사이트를 공개하는 것 같아서 앞 부분...","categories": ["python"],
+        "tags": ["python","colaboratory"],
+        "url": "http://localhost:4000/python/file_down/",
+        "teaser": "http://drive.google.com/uc?export=view&id=1rnPKKJbvl3Jc5C9ZGnqboqBTROO18b-0"
+      },{
+        "title": "png, jpg 용량 줄이기",
+        "excerpt":"가끔 png나 jpg 파일의 용량을 줄여야 하는 경우가 있다. 이때 회원 가입 없이 간편하게 사용 할 수 있는 유용한 사이트를 소개한다. tinypng 저기에 이미지를 drag &amp; drop하면 이렇게 결과가 나오고, 우측의 download를 누르면 된다. 여러 파일의 용량을 줄인 경우 하단에 download all 이라는 버튼을 이용하면 한꺼번에 다운 받을 수 있어...","categories": ["life"],
+        "tags": ["png","용량 줄이기"],
+        "url": "http://localhost:4000/life/png/",
+        "teaser": "http://drive.google.com/uc?export=view&id=1-pJ8HVPtBcUKsLCbRZp9N93uXJoc9qZG"
       }]
