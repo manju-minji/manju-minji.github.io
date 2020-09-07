@@ -184,6 +184,6 @@ toc_label: 목차
    * <a href="(https://manju-minji.github.io/data%20structure/%EB%B0%B1%EC%A4%80%20%EB%AC%B8%EC%A0%9C/graph_bi/" target="_blank">이분 그래프 설명 게시물 바로가기</a>
 
 
-   <html>
-   {% include default_mention.html %}
-   </html>
+<html>
+  {% include default_mention.html %}
+</html>
