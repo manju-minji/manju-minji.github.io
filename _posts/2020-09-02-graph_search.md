@@ -177,11 +177,11 @@ toc_label: 목차
 
 1. __연결 요소__ 찾기
 
-   * [연결 요소 게시물](_posts\2020-09-07-graph_connect.md)
+   * <a href="(https://manju-minji.github.io/data%20structure/%EB%B0%B1%EC%A4%80%20%EB%AC%B8%EC%A0%9C/graph_connect/" target="_blank">연결 요소 설명 게시물 바로가기</a>
 
 2. __이분 그래프__
 
-   * [이분 그래프 게시물]()
+   * <a href="(https://manju-minji.github.io/data%20structure/%EB%B0%B1%EC%A4%80%20%EB%AC%B8%EC%A0%9C/graph_bi/" target="_blank">이분 그래프 설명 게시물 바로가기</a>
 
 
    <html>

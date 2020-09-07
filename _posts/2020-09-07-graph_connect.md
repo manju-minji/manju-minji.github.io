@@ -1,6 +1,8 @@
 ---
 title: "Graph - 연결 요소"
 comments: true
+header:
+  teaser: 'http://drive.google.com/uc?export=view&id=1n6duP4g7uTjn9px4R1OC927Z9a_u58il'
 categories:
   - data structure
   - 백준 문제
