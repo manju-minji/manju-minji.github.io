@@ -146,7 +146,7 @@ toc_label: 목차
 
 ## 문제 풀어 보기(구현)
 
-[백준 DFS와 BFS 문제](https://www.acmicpc.net/problem/1260)
+<a href="https://www.acmicpc.net/problem/1260" target="_blank">백준 DFS와 BFS 문제</a>
 
 1. 인접 행렬을 이용한 풀이
 
@@ -177,12 +177,13 @@ toc_label: 목차
 
 1. __연결 요소__ 찾기
 
-   * <a href="https://manju-minji.github.io/data%20structure/%EB%B0%B1%EC%A4%80%20%EB%AC%B8%EC%A0%9C/graph_connect/" target="_blank">연결 요소 설명 게시물 바로가기</a>
+   * <a href="(https://manju-minji.github.io/data%20structure/%EB%B0%B1%EC%A4%80%20%EB%AC%B8%EC%A0%9C/graph_connect/" target="_blank">연결 요소 설명 게시물 바로가기</a>
 
 2. __이분 그래프__
 
-   * <a href="https://manju-minji.github.io/data%20structure/%EB%B0%B1%EC%A4%80%20%EB%AC%B8%EC%A0%9C/graph_bi/" target="_blank">이분 그래프 설명 게시물 바로가기</a>
+   * <a href="(https://manju-minji.github.io/data%20structure/%EB%B0%B1%EC%A4%80%20%EB%AC%B8%EC%A0%9C/graph_connect/" target="_blank">이분 그래프 설명 게시물 바로가기</a>
 
 
-
-  {% include default_mention.html %}
+   <html>
+   {% include default_mention.html %}
+   </html>

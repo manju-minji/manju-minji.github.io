@@ -17,11 +17,11 @@ last_modified_at: 2020-09-05
 
 하지만 google analytics를 통하면 구글 뿐만 아니라 블로그에 방문하는 모든 방문자의 정보를 확인 할 수 있다.
 
-방문자들이 네이버 혹은 다음의 검색, 타사이트 추천, 직접 입력 등 무엇을 통해 블로그에 방문 했는지 도 알 수 있고, 이 외에도 방문자의 위치, 네트워크, 사용 기기 등의 정보도 확인할 수 있다. 
+방문자들이 네이버 혹은 다음의 검색, 타사이트 추천, 직접 입력 등 무엇을 통해 블로그에 방문 했는지 도 알 수 있고, 이 외에도 방문자의 위치, 네트워크, 사용 기기 등의 정보도 확인할 수 있다.
 
 ## google analytics 등록
 
-1. [google analytics 사이트](https://analytics.google.com/analytics/web/provision/?hl=ko&pli=1#/provision) 에 접속한다.
+1. <a href="https://analytics.google.com/analytics/web/provision/?hl=ko&pli=1#/provision" target="_blank">google analytics 사이트</a>에 접속한다.
 
 2. 측정 시작을 누른다.
 
