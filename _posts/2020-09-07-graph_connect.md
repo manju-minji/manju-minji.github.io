@@ -16,6 +16,7 @@ tags:
   - 그래프 응용
 show_date: true
 last_modified_at: 2020-09-07
+top: true
 ---
 
 ## 연결 요소(Connected Component)
@@ -70,4 +71,3 @@ DFS나 BFS 탐색을 이용하여 구할 수 있다.
 
 
      {% include default_mention.html %}
-       
