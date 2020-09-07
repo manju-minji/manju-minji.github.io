@@ -25,23 +25,23 @@ last_modified_at: 2020-09-05
 
 2. 측정 시작을 누른다.
 
-   <img src='http://drive.google.com/uc?export=view&id=1b4SqfFUXQcvu17KhOaNhPwfBJSiEfcMO' style="zoom:50%;" />
+   <img src='http://drive.google.com/uc?export=view&id=1b4SqfFUXQcvu17KhOaNhPwfBJSiEfcMO' style="zoom:30%;" />
 
 3. 내 구글 계정을 적어 준다.
 
-   <img src='http://drive.google.com/uc?export=view&id=1FQIwZpekE3-EbvidFAtEk5xVP5zme5SB' style="zoom:50%;" />
+   <img src='http://drive.google.com/uc?export=view&id=1FQIwZpekE3-EbvidFAtEk5xVP5zme5SB' style="zoom:40%;" />
 
 4. 측정 하려는 대상 __웹__ 을 선택하고 다음으로 넘어간다.
 
-   <img src='http://drive.google.com/uc?export=view&id=1QRqaRMNZPpMFS5PV68LSp--vfsf6EYfp' style="zoom:50%;" />
+   <img src='http://drive.google.com/uc?export=view&id=1QRqaRMNZPpMFS5PV68LSp--vfsf6EYfp' style="zoom:30%;" />
 
 5. 내 블로그 주소를 입력하고 다른 세부 속성들을 설정한다.
 
-   <img src='http://drive.google.com/uc?export=view&id=1KLtrryOw7i0YGRCSO1feneRWSOUC7mD4' style="zoom:50%;" />
+   <img src='http://drive.google.com/uc?export=view&id=1KLtrryOw7i0YGRCSO1feneRWSOUC7mD4' style="zoom:30%;" />
 
 6. _config.yml의 analytics 부분에 추적 ID를 넣어준다.
 
-   <img src='http://drive.google.com/uc?export=view&id=1F15cT1Nghpnv_kbQiGcI2AP2yeqgyLXB' style="zoom:67%;" />
+   <img src='http://drive.google.com/uc?export=view&id=1F15cT1Nghpnv_kbQiGcI2AP2yeqgyLXB' style="zoom:50%;" />
 
    <img src='http://drive.google.com/uc?export=view&id=18ZsROKPH0qKfY9ZA6FH_vuexMtI9j3q-' />
 

@@ -2,13 +2,14 @@
 
 title: "Graph에 대하여"
 comments: true
-header: 
+header:
   teaser: "http://drive.google.com/uc?export=view&amp;id=1kvqN8dv10vdgY9CN9Nt8scugwabkURAp"
 categories:
   - data structure
 tags:
   - 자료구조
   - data structure
+  - graph
 show_date: true
 last_modified_at: 2020-08-28
 toc: true
@@ -58,15 +59,15 @@ ___
 
   <img src="http://drive.google.com/uc?export=view&amp;id=1oAb8A--5JdglG9alXaAiwQQBFyzmaHpk" style="zoom:50%;" />
 
-  
+
 
 * 무방향 그래프(Undirected Graph) : 간선에 방향이 없다. 양방향 그래프(Bidirection Graph)라고도 함.
 
   * 1-3인 경우, 1->3과 3->1로 저장해야 한다.
 
     <img src="http://drive.google.com/uc?export=view&amp;id=1xYggFVHiw50LAi0TfgHSXMIBLFr8bPSj" style="zoom:50%;" />
-  
-  
+
+
 
 그리고 __방향/무방향 그래프__ 는 간선의 연결 형태에 따라 __완전 그래프__ 로 구분이 된다.
 
@@ -78,7 +79,7 @@ ___
 
   <img src="http://drive.google.com/uc?export=view&amp;id=1t1PnW05kQib96JSsURkvzZ6nW8DhfsbR" alt="완전_방향" style="zoom:50%;" />
 
-  
+
 
 * 추가
 
@@ -207,7 +208,7 @@ ___
 
 ​			__A[1]__	2	3	4
 
-​			__A[2]__	1	3	
+​			__A[2]__	1	3
 
 ​			__A[3]__	1	2	4	5
 
@@ -337,5 +338,3 @@ ___
 <html>
 {% include default_mention.html %}
 </html>
-
-

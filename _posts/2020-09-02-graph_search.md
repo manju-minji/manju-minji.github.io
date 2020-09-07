@@ -1,10 +1,11 @@
 ---
-title: "Graph의 탐색 - DFS, BFS"
+title: "Graph의 탐색 - DFS, BFS(작성중)"
 comments: true
 header:
   teaser: "http://drive.google.com/uc?export=view&amp;id=1kvqN8dv10vdgY9CN9Nt8scugwabkURAp"
 categories:
   - data structure
+  - 백준 문제
 tags:
   - 자료구조
   - data structure
@@ -14,7 +15,7 @@ tags:
   - 연결 요소
   - 이분 그래프
 show_date: true
-last_modified_at: 2020-09-04
+last_modified_at: 2020-09-07
 toc: true
 toc_sticky: true
 toc_label: 목차
@@ -103,7 +104,7 @@ toc_label: 목차
   * DFS에서는 실제로 정점을 방문 했을 경우에 해당 정점을 stack에 push하고 배열의 값을 1로(방문의 표시) 바꿔주었다.
   * 하지만 BFS에서는 __지금 위치에서 갈 수 있는 모든 정점을 큐에 넣고__, __큐에 넣었을 때 배열의 값을 1로__ (방문했다고 표시) 바꿔주어야 한다.(즉, 실제로 아직 방문하지 않았지만 큐에 넣고, 배열에도 체크 해줘야 한다는 말)
 
-  
+
 
 1. 현재 정점은 1이고, 큐에는 1을 넣어준다.
 
@@ -113,7 +114,7 @@ toc_label: 목차
 
 <img src='http://drive.google.com/uc?export=view&id=11i_rVBUwTvMeHJmfvaID-Lz_6YmWZuqV' style="zoom:40%;" />
 
-3. 그리고 1을 큐에서 제거하고 다음 front의 값인 2를 현재 정점으로 합니다. 
+3. 그리고 1을 큐에서 제거하고 다음 front의 값인 2를 현재 정점으로 합니다.
 
 <img src='http://drive.google.com/uc?export=view&id=14rZnKjJRQGCnnRxLbEgRp1UX4gFWg18j' style="zoom:40%;" />
 
@@ -176,40 +177,13 @@ toc_label: 목차
 
 1. __연결 요소__ 찾기
 
-   1. 연결 요소(Connected Component)란?
-
-      <img src='http://drive.google.com/uc?export=view&id=1dCkAwAed4jd8llumiZ30hpvnweK6W2kO' style="zoom:50%;" />
-
-      위의 이미지는 그래프가 1개 일까 2개 일까??
-
-      정답은 1개와 2개 모두 맞다.
-
-      1개라면 단지 연결하는 간선이 없는 그래프이고
-
-      2개라면 우연히 정점이 겹치지 않는 각각의 그래프이다.
-
-      <img src='http://drive.google.com/uc?export=view&id=1n6duP4g7uTjn9px4R1OC927Z9a_u58il' style="zoom:50%;" />
-
-      그래프가 1개라면, __나누어진 각각의 그래프를 연결 요소__라고 한다.
-
-      즉, 위의 그림으로 보자면 노란색 연결 요소 하나 파란색 연결 요소하나 이렇게 총 2개의 연결요소로 이루어진 그래프가 되는 것이다.
-
-      
-
-   2. 연결 요소의 조건
-
-      * 연결 요소에 속한 모든 정점들은 끊어지면 안되고, 서로 연결 되어 있어야 한다.
-      * 다른 연결 요소에 속한 정점과 연결되는 간선이 있어선 안된다.
-
-   3. 연결 요소 문제
-
-      * DFS나 BFS 탐색을 이용하여 구할 수 있다.
+   * [연결 요소 게시물](_posts\2020-09-07-graph_connect.md)
 
 2. __이분 그래프__
 
-   1. 이분 그래프(Bipartite Graph)란?
+   * [이분 그래프 게시물]()
 
-       
 
-   2. 이분 그래프의 조건
-
+   <html>
+   {% include default_mention.html %}
+   </html>
