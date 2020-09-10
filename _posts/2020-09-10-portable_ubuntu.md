@@ -1,6 +1,5 @@
 ---
-
-	title: "portable linux - persistent live usb(비휘발성 live linux)"
+title: "portable linux - persistent live usb(비휘발성 live linux)"
 comments: true
 categories:
   - life
@@ -34,7 +33,7 @@ last_modified_at: 2020-09-10
 
 ### 준비
 
-* 4GB 이상의 아무것도 없는 USB 준비하기 
+* 4GB 이상의 아무것도 없는 USB 준비하기
 
 
 
