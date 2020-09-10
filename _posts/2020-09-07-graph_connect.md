@@ -4,11 +4,10 @@ comments: true
 header:
   teaser: 'http://drive.google.com/uc?export=view&id=1n6duP4g7uTjn9px4R1OC927Z9a_u58il'
 categories:
-  - data structure
+  - algorithm
   - 백준 문제
 tags:
-  - 자료구조
-  - data structure
+  - algorithm
   - graph
   - DFS
   - BFS
@@ -16,7 +15,6 @@ tags:
   - 그래프 응용
 show_date: true
 last_modified_at: 2020-09-07
-top: true
 ---
 
 ## 연결 요소(Connected Component)

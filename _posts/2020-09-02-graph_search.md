@@ -4,11 +4,10 @@ comments: true
 header:
   teaser: "http://drive.google.com/uc?export=view&amp;id=1kvqN8dv10vdgY9CN9Nt8scugwabkURAp"
 categories:
-  - data structure
+  - algorithm
   - 백준 문제
 tags:
-  - 자료구조
-  - data structure
+  - algorithm
   - graph
   - DFS
   - BFS
