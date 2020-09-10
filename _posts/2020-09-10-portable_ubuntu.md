@@ -54,7 +54,7 @@ toc_label: 목차
 
 
 
-<div class="notice--waring">
+<div class="notice--danger">
     <strong>주의 사항</strong> - 18.04 버전은 persistent하게 만들어지지 않아요.<br>
     처음에  20.04 버전이 나오지 않은 상황에서 18.04를 이용해서 persistent하게 만들려고 갖은 노력을 했는데...안되더라고요. 그냥 그 버전이 안되는거였어요.(열심히 구글링해서 안되는 것을 깨달음)<br>
     그래서 <strong>20.04</strong>버전을 사용하셔야 데이터가 저장되는 ubuntu usb를 가질 수 있어요!

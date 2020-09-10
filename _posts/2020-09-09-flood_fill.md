@@ -23,6 +23,6 @@ last_modified_at: 2020-09-09
 
 ## 플러드필 문제
 
-* <a href="https://manju-minji.github.io/data%20structure/%EB%B0%B1%EC%A4%80%20%EB%AC%B8%EC%A0%9C/2667/" target="_blank">백준 2667 - 단지 번호 붙이기</a>
+* <a href="https://manju-minji.github.io/algorithm/%EB%B0%B1%EC%A4%80%20%EB%AC%B8%EC%A0%9C/2667/" target="_blank">백준 2667 - 단지 번호 붙이기</a>
 
-* <a href="https://manju-minji.github.io/data%20structure/%EB%B0%B1%EC%A4%80%20%EB%AC%B8%EC%A0%9C/4963/" target="_blank">백준 2667 - 단지 번호 붙이기</a>
+* <a href="https://manju-minji.github.io/algorithm/%EB%B0%B1%EC%A4%80%20%EB%AC%B8%EC%A0%9C/4963/" target="_blank">백준 4963 - 섬의 개수</a>
