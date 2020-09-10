@@ -9,6 +9,9 @@ tags:
   - ubuntu
 show_date: true
 last_modified_at: 2020-09-10
+toc: true
+toc_sticky: true
+toc_label: 목차
 ---
 
 > 들고 다닐 수 있는 리눅스 만들기!

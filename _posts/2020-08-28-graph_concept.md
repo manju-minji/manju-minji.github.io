@@ -5,7 +5,7 @@ comments: true
 header:
   teaser: "http://drive.google.com/uc?export=view&amp;id=1kvqN8dv10vdgY9CN9Nt8scugwabkURAp"
 categories:
-  - algorithm
+  - data structure
 tags:
   - algorithm
   - graph
