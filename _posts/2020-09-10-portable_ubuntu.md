@@ -3,7 +3,6 @@ title: "portable linux - persistent live usb(비휘발성 live linux)"
 comments: true
 categories:
   - life
-  - linux
 tags:
   - linux
   - ubuntu
@@ -115,8 +114,6 @@ rufus라는 응용 프로그램을 이용해서 ubuntu usb를 만들어 줄 겁�
     <img src='http://drive.google.com/uc?export=view&id=1RICg6wmwLOsOJi2u8utC4r3RCCUrBC0I' style="zoom:33%;" />
 
 11. 그리고 다시 껐다가 켜도 내가 설정한 정보, 내가 저장한 데이터들이 그대로 남아있는 것을 보실 수 있을겁니다~!
-
-
 
 
 
