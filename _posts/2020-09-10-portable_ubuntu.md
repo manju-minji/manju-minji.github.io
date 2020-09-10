@@ -117,4 +117,4 @@ rufus라는 응용 프로그램을 이용해서 ubuntu usb를 만들어 줄 겁�
 
 
 
-{% include defaul_mention.html %}
+{% include default_mention.html %}
