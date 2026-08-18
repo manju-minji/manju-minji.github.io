@@ -1,0 +1,62 @@
+<!doctype html>
+<!-- 또르르 지원 문서 전용 레이아웃. 블로그 테마(마스트헤드·사이드바·푸터·main.css)를 일부러 쓰지 않는다
+     — 블로그 디자인이 바뀌어도 이 페이지는 그대로 있어야 하기 때문. 스타일은 아래 한 벌이 전부다. -->
+<html lang="{{ page.lang | default: 'ko' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+  <style>
+    :root {
+      --bg: #ffffff;
+      --ink: #23272e;
+      --ink-soft: #5c636b;
+      --rule: #e4e7ea;
+      --link: #1f6f63;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16181c;
+        --ink: #e6e8ea;
+        --ink-soft: #a3a9b0;
+        --rule: #2c3037;
+        --link: #7fc9bb;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard",
+                   "Noto Sans KR", "Malgun Gothic", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
+      -webkit-text-size-adjust: 100%;
+    }
+    main { max-width: 44rem; margin: 0 auto; padding: 3rem 1.4rem 5rem; }
+    h1 { font-size: 1.7rem; line-height: 1.35; margin: 0 0 1.2rem; letter-spacing: -0.01em; }
+    h2 { font-size: 1.2rem; margin: 2.6rem 0 0.9rem; letter-spacing: -0.01em; }
+    p, ul { margin: 0 0 1.1rem; }
+    ul { padding-left: 1.3rem; }
+    li { margin-bottom: 0.35rem; }
+    strong { font-weight: 600; }
+    a { color: var(--link); text-underline-offset: 2px; }
+    a:hover { text-decoration: none; }
+    hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0 2.4rem; }
+    /* 언어가 바뀌는 자리는 색을 한 단 낮춰 문서 안에서 구획으로 읽히게 한다 */
+    h2 + p em, .lang-note { color: var(--ink-soft); }
+    @media (max-width: 30rem) {
+      body { font-size: 16px; }
+      main { padding: 2rem 1.1rem 3.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+  </main>
+</body>
+</html>

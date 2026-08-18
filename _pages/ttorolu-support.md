@@ -1,8 +1,9 @@
 ---
 title: "또르르: 밤의 미로 산책 — 지원"
+description: "또르르: 밤의 미로 산책 문의·자주 묻는 것·개인정보 처리방침"
 permalink: /ttorolu/support/
-layout: single
-author_profile: false
+layout: ttorolu
+sitemap: false
 ---
 
 밤길을 걷는 구슬 미로 게임 **또르르: 밤의 미로 산책**의 지원 페이지입니다.
